@@ -1,0 +1,16 @@
+.task-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  /* background-color: #121212; */
+}
+
+.task-list-container p.empty-list {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  font-size: 1.25rem;
+}
