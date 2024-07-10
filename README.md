@@ -25,7 +25,7 @@ Certifique-se de ter o Node.js instalado na sua máquina.
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/gafanhotoalexandre/gt-todo-list.git
 
    cd nome-do-repositorio
 
