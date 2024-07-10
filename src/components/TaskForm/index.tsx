@@ -1,11 +1,12 @@
-import './TaskForm.css'
 import { useRef } from 'react'
+import './TaskForm.css'
 
 interface TaskFormProps {
   addTask: (title: string, description: string) => void
+  closeModal: () => void
 }
 
-export function TaskForm({ addTask }: TaskFormProps) {
+export function TaskForm({ addTask, closeModal }: TaskFormProps) {
   const titleRef = useRef<HTMLInputElement>(null)
   const descriptionRef = useRef<HTMLTextAreaElement>(null)
 
@@ -19,6 +20,7 @@ export function TaskForm({ addTask }: TaskFormProps) {
     }
 
     addTask(title, description)
+    closeModal()
     if (titleRef.current) titleRef.current.value = ''
     if (descriptionRef.current) descriptionRef.current.value = ''
   }

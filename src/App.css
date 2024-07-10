@@ -9,3 +9,8 @@
   margin-top: 20px;
   font-size: 1.8rem;
 }
+
+.open-modal-button {
+  color: #fff;
+  text-transform: uppercase;
+}
